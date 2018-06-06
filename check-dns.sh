@@ -22,6 +22,6 @@ if [[ $(dig +short $domain $type | grep -i $result) ]]; then
 else 
     out="$(dig +short $domain $type| sed ':a;N;$!ba;s/\n/;/g')"
     echo "CheckDNS Critical: $domain - $out"
-    exit 3
+    exit 2
 fi
 

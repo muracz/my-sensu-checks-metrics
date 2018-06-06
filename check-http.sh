@@ -9,5 +9,5 @@ if [ $rc_code == "200" ]; then
         echo "CheckHttp OK: $rc_code"
     else 
         echo "CheckHttp CRITICAL: $rc_code"
-        exit 3 
+        exit 2 
 fi
